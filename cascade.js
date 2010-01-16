@@ -54,7 +54,6 @@
 			if (chain.shift() != parentClass) {
 				parentClass = chain.shift();
 			}
-			alert(parentClass);
 			$('#' + opts.child).html($('#' + _clone + ' .' + parentClass).clone());
 
 			// `other` option
