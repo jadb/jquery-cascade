@@ -1,0 +1,250 @@
+<html>
+   <head>
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js" type="text/javascript"></script>
+      <script src="cascade.js" type="text/javascript"></script>
+   </head>
+   <body>
+
+   <h2>Simple</h2>
+
+   <label for="simple_select">Parent</label>
+   <select id="simple_select">
+      <option class="simple-group-1" value="parent_1">Parent 1</option>
+      <option class="simple-group-2" value="parent_2">Parent 2</option>
+      <option class="simple-group-3" value="parent_3">Parent 3</option>
+      <option class="simple-group-4" value="parent_4">Parent 4</option>
+      <option class="simple-group-5" value="parent_5">Parent 5</option>
+   </select>
+   <label for="simple_select_child">Child</label>
+   <select id="simple_select_child">
+      <option class="simple-group-1" value="parent_1_child_1">Parent 1 Child 1</option>
+      <option class="simple-group-1" value="parent_1_child_2">Parent 1 Child 2</option>
+      <option class="simple-group-1" value="parent_1_child_3">Parent 1 Child 3</option>
+      <option class="simple-group-1" value="parent_1_child_4">Parent 1 Child 4</option>
+      <option class="simple-group-2" value="parent_2_child_1">Parent 2 Child 1</option>
+      <option class="simple-group-2" value="parent_2_child_2">Parent 2 Child 2</option>
+      <option class="simple-group-2" value="parent_2_child_3">Parent 2 Child 3</option>
+      <option class="simple-group-2" value="parent_2_child_4">Parent 2 Child 4</option>
+      <option class="simple-group-2" value="parent_2_child_5">Parent 2 Child 5</option>
+      <option class="simple-group-3" value="parent_3_child_1">Parent 3 Child 1</option>
+      <option class="simple-group-3" value="parent_3_child_2">Parent 3 Child 2</option>
+      <option class="simple-group-3" value="parent_3_child_3">Parent 3 Child 3</option>
+      <option class="simple-group-3" value="parent_3_child_4">Parent 3 Child 4</option>
+      <option class="simple-group-3" value="parent_3_child_5">Parent 3 Child 5</option>
+      <option class="simple-group-4" value="parent_4_child_1">Parent 4 Child 1</option>
+      <option class="simple-group-4" value="parent_4_child_2">Parent 4 Child 2</option>
+      <option class="simple-group-4" value="parent_4_child_3">Parent 4 Child 3</option>
+      <option class="simple-group-5" value="parent_5_child_1">Parent 5 Child 1</option>
+      <option class="simple-group-5" value="parent_5_child_2">Parent 5 Child 2</option>
+      <option class="simple-group-5" value="parent_5_child_3">Parent 5 Child 3</option>
+   </select>
+   <script type="text/javascript" charset="utf-8">
+      $(document).ready(function() {
+         $('#simple_select').cascade();
+      });
+   </script>
+
+   <h2>Chained</h2>
+   <label for="chained_select">Parent</label>
+   <select id="chained_select">
+      <option class="chained-group-1" value="parent_1">Parent 1</option>
+      <option class="chained-group-2" value="parent_2">Parent 2</option>
+      <option class="chained-group-3" value="parent_3">Parent 3</option>
+      <option class="chained-group-4" value="parent_4">Parent 4</option>
+      <option class="chained-group-5" value="parent_5">Parent 5</option>
+   </select>
+   <label for="chained_select_child">Child</label>
+   <select id="chained_select_child">
+      <option class="chained-group-1 parent-1-child-1" value="parent_1_child_1">Parent 1 Child 1</option>
+      <option class="chained-group-1 parent-1-child-2" value="parent_1_child_2">Parent 1 Child 2</option>
+      <option class="chained-group-1 parent-1-child-3" value="parent_1_child_3">Parent 1 Child 3</option>
+      <option class="chained-group-1 parent-1-child-4" value="parent_1_child_4">Parent 1 Child 4</option>
+      <option class="chained-group-2 parent-2-child-1" value="parent_2_child_1">Parent 2 Child 1</option>
+      <option class="chained-group-2 parent-2-child-2" value="parent_2_child_2">Parent 2 Child 2</option>
+      <option class="chained-group-2 parent-2-child-3" value="parent_2_child_3">Parent 2 Child 3</option>
+      <option class="chained-group-2 parent-2-child-4" value="parent_2_child_4">Parent 2 Child 4</option>
+      <option class="chained-group-2 parent-2-child-5" value="parent_2_child_5">Parent 2 Child 5</option>
+      <option class="chained-group-3 parent-3-child-1" value="parent_3_child_1">Parent 3 Child 1</option>
+      <option class="chained-group-3 parent-3-child-2" value="parent_3_child_2">Parent 3 Child 2</option>
+      <option class="chained-group-3 parent-3-child-3" value="parent_3_child_3">Parent 3 Child 3</option>
+      <option class="chained-group-3 parent-3-child-4" value="parent_3_child_4">Parent 3 Child 4</option>
+      <option class="chained-group-3 parent-3-child-5" value="parent_3_child_5">Parent 3 Child 5</option>
+      <option class="chained-group-4 parent-4-child-1" value="parent_4_child_1">Parent 4 Child 1</option>
+      <option class="chained-group-4 parent-4-child-2" value="parent_4_child_2">Parent 4 Child 2</option>
+      <option class="chained-group-4 parent-4-child-3" value="parent_4_child_3">Parent 4 Child 3</option>
+      <option class="chained-group-5 parent-5-child-1" value="parent_5_child_1">Parent 5 Child 1</option>
+      <option class="chained-group-5 parent-5-child-2" value="parent_5_child_2">Parent 5 Child 2</option>
+      <option class="chained-group-5 parent-5-child-3" value="parent_5_child_3">Parent 5 Child 3</option>
+   </select>
+   <label for="chained_select_child_child">GrandChild</label>
+   <select id="chained_select_child_child">
+      <option class="parent-1-child-1" value="parent_1_child_1_child_1">Parent 1 Child 1 GrandChild 1</option>
+      <option class="parent-1-child-1" value="parent_1_child_1_child_2">Parent 1 Child 1 GrandChild 2</option>
+      <option class="parent-1-child-1" value="parent_1_child_1_child_3">Parent 1 Child 1 GrandChild 3</option>
+      <option class="parent-1-child-2" value="parent_1_child_2_child_1">Parent 1 Child 2 GrandChild 1</option>
+      <option class="parent-1-child-2" value="parent_1_child_2_child_2">Parent 1 Child 2 GrandChild 2</option>
+      <option class="parent-1-child-3" value="parent_1_child_3_child_1">Parent 1 Child 3 GrandChild 1</option>
+      <option class="parent-1-child-3" value="parent_1_child_3_child_2">Parent 1 Child 3 GrandChild 2</option>
+      <option class="parent-1-child-3" value="parent_1_child_3_child_3">Parent 1 Child 3 GrandChild 3</option>
+      <option class="parent-1-child-4" value="parent_1_child_4_child_1">Parent 1 Child 4 GrandChild 1</option>
+      <option class="parent-2-child-1" value="parent_2_child_1_child_1">Parent 2 Child 1 GrandChild 1</option>
+      <option class="parent-2-child-1" value="parent_2_child_1_child_2">Parent 2 Child 1 GrandChild 2</option>
+      <option class="parent-2-child-1" value="parent_2_child_1_child_3">Parent 2 Child 1 GrandChild 3</option>
+      <option class="parent-2-child-2" value="parent_2_child_2_child_1">Parent 2 Child 2 GrandChild 1</option>
+      <option class="parent-2-child-2" value="parent_2_child_2_child_2">Parent 2 Child 2 GrandChild 2</option>
+      <option class="parent-2-child-2" value="parent_2_child_2_child_3">Parent 2 Child 2 GrandChild 3</option>
+      <option class="parent-2-child-2" value="parent_2_child_2_child_4">Parent 2 Child 2 GrandChild 4</option>
+      <option class="parent-2-child-3" value="parent_2_child_3_child_1">Parent 2 Child 3 GrandChild 1</option>
+      <option class="parent-2-child-3" value="parent_2_child_3_child_2">Parent 2 Child 3 GrandChild 2</option>
+      <option class="parent-2-child-3" value="parent_2_child_3_child_3">Parent 2 Child 3 GrandChild 3</option>
+      <option class="parent-2-child-4" value="parent_2_child_4_child_1">Parent 2 Child 4 GrandChild 1</option>
+      <option class="parent-2-child-4" value="parent_2_child_4_child_2">Parent 2 Child 4 GrandChild 2</option>
+      <option class="parent-2-child-5" value="parent_2_child_4_child_1">Parent 2 Child 5 GrandChild 1</option>
+      <option class="parent-3-child-1" value="parent_3_child_1_child_1">Parent 3 Child 1 GrandChild 1</option>
+      <option class="parent-3-child-1" value="parent_3_child_1_child_1">Parent 3 Child 1 GrandChild 1</option>
+      <option class="parent-3-child-1" value="parent_3_child_1_child_3">Parent 3 Child 1 GrandChild 3</option>
+      <option class="parent-3-child-2" value="parent_3_child_2_child_1">Parent 3 Child 2 GrandChild 1</option>
+      <option class="parent-3-child-2" value="parent_3_child_2_child_2">Parent 3 Child 2 GrandChild 2</option>
+      <option class="parent-3-child-2" value="parent_3_child_2_child_3">Parent 3 Child 2 GrandChild 3</option>
+      <option class="parent-3-child-2" value="parent_3_child_2_child_4">Parent 3 Child 2 GrandChild 4</option>
+      <option class="parent-3-child-3" value="parent_3_child_3_child_1">Parent 3 Child 3 GrandChild 1</option>
+      <option class="parent-3-child-3" value="parent_3_child_3_child_2">Parent 3 Child 3 GrandChild 2</option>
+      <option class="parent-3-child-3" value="parent_3_child_3_child_3">Parent 3 Child 3 GrandChild 3</option>
+      <option class="parent-3-child-4" value="parent_3_child_4_child_1">Parent 3 Child 4 GrandChild 1</option>
+      <option class="parent-3-child-4" value="parent_3_child_4_child_2">Parent 3 Child 4 GrandChild 2</option>
+      <option class="parent-3-child-4" value="parent_3_child_4_child_3">Parent 3 Child 4 GrandChild 3</option>
+      <option class="parent-3-child-4" value="parent_3_child_4_child_4">Parent 3 Child 4 GrandChild 4</option>
+      <option class="parent-3-child-5" value="parent_3_child_5_child_1">Parent 3 Child 5 GrandChild 1</option>
+      <option class="parent-3-child-5" value="parent_3_child_5_child_2">Parent 3 Child 5 GrandChild 2</option>
+      <option class="parent-3-child-5" value="parent_3_child_5_child_3">Parent 3 Child 5 GrandChild 3</option>
+      <option class="parent-3-child-5" value="parent_3_child_5_child_4">Parent 3 Child 5 GrandChild 4</option>
+      <option class="parent-3-child-5" value="parent_3_child_5_child_5">Parent 3 Child 5 GrandChild 5</option>
+      <option class="parent-4-child-1" value="parent_4_child_1_child_1">Parent 4 Child 1 GrandChild 1</option>
+      <option class="parent-4-child-1" value="parent_4_child_1_child_2">Parent 4 Child 1 GrandChild 2</option>
+      <option class="parent-4-child-1" value="parent_4_child_1_child_3">Parent 4 Child 1 GrandChild 3</option>
+      <option class="parent-4-child-2" value="parent_4_child_2_child_1">Parent 4 Child 2 GrandChild 1</option>
+      <option class="parent-4-child-2" value="parent_4_child_2_child_2">Parent 4 Child 2 GrandChild 2</option>
+      <option class="parent-4-child-2" value="parent_4_child_2_child_3">Parent 4 Child 2 GrandChild 3</option>
+      <option class="parent-4-child-2" value="parent_4_child_2_child_4">Parent 4 Child 2 GrandChild 4</option>
+      <option class="parent-4-child-2" value="parent_4_child_2_child_5">Parent 4 Child 2 GrandChild 5</option>
+      <option class="parent-4-child-3" value="parent_4_child_3_child_1">Parent 4 Child 3 GrandChild 1</option>
+      <option class="parent-4-child-3" value="parent_4_child_3_child_2">Parent 4 Child 3 GrandChild 2</option>
+      <option class="parent-4-child-3" value="parent_4_child_3_child_3">Parent 4 Child 3 GrandChild 3</option>
+      <option class="parent-4-child-3" value="parent_4_child_3_child_4">Parent 4 Child 3 GrandChild 4</option>
+      <option class="parent-5-child-1" value="parent_5_child_1_child_1">Parent 5 Child 1 GrandChild 1</option>
+      <option class="parent-5-child-1" value="parent_5_child_1_child_2">Parent 5 Child 1 GrandChild 2</option>
+      <option class="parent-5-child-1" value="parent_5_child_1_child_3">Parent 5 Child 1 GrandChild 3</option>
+      <option class="parent-5-child-2" value="parent_5_child_2_child_1">Parent 5 Child 2 GrandChild 1</option>
+      <option class="parent-5-child-2" value="parent_5_child_2_child_2">Parent 5 Child 2 GrandChild 2</option>
+      <option class="parent-5-child-2" value="parent_5_child_2_child_3">Parent 5 Child 2 GrandChild 3</option>
+      <option class="parent-5-child-2" value="parent_5_child_2_child_4">Parent 5 Child 2 GrandChild 4</option>
+      <option class="parent-5-child-3" value="parent_5_child_3_child_1">Parent 5 Child 3 GrandChild 1</option>
+      <option class="parent-5-child-3" value="parent_5_child_3_child_2">Parent 5 Child 3 GrandChild 2</option>
+      <option class="parent-5-child-3" value="parent_5_child_3_child_3">Parent 5 Child 3 GrandChild 3</option>
+      <option class="parent-5-child-3" value="parent_5_child_3_child_4">Parent 5 Child 3 GrandChild 4</option>
+      <option class="parent-5-child-3" value="parent_5_child_3_child_5">Parent 5 Child 3 GrandChild 5</option>
+   </select>
+   <script type="text/javascript" charset="utf-8">
+      $(document).ready(function() {
+         $('#chained_select').cascade();
+         $('#chained_select_child').cascade();
+      });
+   </script>
+
+   <h2>Fancy</h2>
+   <label for="text_select">Parent</label>
+   <select id="text_select">
+      <option class="text-group-1" value="parent_1">Parent 1</option>
+      <option class="text-group-2" value="parent_2">Parent 2</option>
+      <option class="text-group-3" value="parent_3">Parent 3</option>
+      <option class="text-group-4" value="parent_4">Parent 4</option>
+      <option class="text-group-5" value="parent_5">Parent 5</option>
+   </select>
+   <label for="text_select_child">Child</label>
+   <select id="text_select_child">
+      <option class="text-group-1" value="parent_1_child_1">Parent 1 Child 1</option>
+      <option class="text-group-1" value="parent_1_child_2">Parent 1 Child 2</option>
+      <option class="text-group-1" value="parent_1_child_3">Parent 1 Child 3</option>
+      <option class="text-group-1" value="parent_1_child_4">Parent 1 Child 4</option>
+      <option class="text-group-1 other" value="other">Other...</option>
+      <option value="text-group-2"></option>
+      <option class="text-group-2" value="parent_2_child_1">Parent 2 Child 1</option>
+      <option class="text-group-2" value="parent_2_child_2">Parent 2 Child 2</option>
+      <option class="text-group-2 selected" value="parent_2_child_3">Parent 2 Child 3</option>
+      <option class="text-group-2" value="parent_2_child_4">Parent 2 Child 4</option>
+      <option class="text-group-2" value="parent_2_child_5">Parent 2 Child 5</option>
+      <option class="text-group-3" value="parent_3_child_1">Parent 3 Child 1</option>
+      <option class="text-group-3" value="parent_3_child_2">Parent 3 Child 2</option>
+      <option class="text-group-3" value="parent_3_child_3">Parent 3 Child 3</option>
+      <option class="text-group-3 selected" value="parent_3_child_4">Parent 3 Child 4</option>
+      <option class="text-group-3" value="parent_3_child_5">Parent 3 Child 5</option>
+      <option class="text-group-4" value="parent_4_child_1">Parent 4 Child 1</option>
+      <option class="text-group-4" value="parent_4_child_2">Parent 4 Child 2</option>
+      <option class="text-group-4" value="parent_4_child_3">Parent 4 Child 3</option>
+      <option class="text-group-5" value="">-- Please select --</option>
+      <option class="text-group-5" value="parent_5_child_1">Parent 5 Child 1</option>
+      <option class="text-group-5" value="parent_5_child_2">Parent 5 Child 2</option>
+      <option class="text-group-5" value="parent_5_child_3">Parent 5 Child 3</option>
+   </select>
+   <div class="text_select_other" style="display:inline">
+      <label for="text_select_other">Please specify</label>
+      <input id="text_select_other" />
+   </div>
+   <div><em>
+      Default selected child by parent (Parent2>Child3, Parent3>Child4), text field when option not in child list
+      (Parent1>Other) and empty option header (Parent5)
+   </em></div>
+   <script type="text/javascript" charset="utf-8">
+      $(document).ready(function() {
+         $('#text_select').cascade();
+      });
+   </script>
+
+   <h2>Callback</h2>
+
+   <label for="callback_select">Parent</label>
+   <select id="callback_select">
+      <option class="callback-group-1" value="parent_1">Parent 1</option>
+      <option class="callback-group-2" value="parent_2">Parent 2</option>
+      <option class="callback-group-3" value="parent_3">Parent 3</option>
+      <option class="callback-group-4" value="parent_4">Parent 4</option>
+      <option class="callback-group-5" value="parent_5">Parent 5</option>
+   </select>
+   <label for="callback_select_child">Child</label>
+   <select id="callback_select_child">
+      <option class="callback-group-1" value="parent_1_child_1">Parent 1 Child 1</option>
+      <option class="callback-group-1" value="parent_1_child_2">Parent 1 Child 2</option>
+      <option class="callback-group-1" value="parent_1_child_3">Parent 1 Child 3</option>
+      <option class="callback-group-1" value="parent_1_child_4">Parent 1 Child 4</option>
+      <option class="callback-group-2" value="parent_2_child_1">Parent 2 Child 1</option>
+      <option class="callback-group-2" value="parent_2_child_2">Parent 2 Child 2</option>
+      <option class="callback-group-2" value="parent_2_child_3">Parent 2 Child 3</option>
+      <option class="callback-group-2" value="parent_2_child_4">Parent 2 Child 4</option>
+      <option class="callback-group-2" value="parent_2_child_5">Parent 2 Child 5</option>
+      <option class="callback-group-3" value="parent_3_child_1">Parent 3 Child 1</option>
+      <option class="callback-group-3" value="parent_3_child_2">Parent 3 Child 2</option>
+      <option class="callback-group-3" value="parent_3_child_3">Parent 3 Child 3</option>
+      <option class="callback-group-3" value="parent_3_child_4">Parent 3 Child 4</option>
+      <option class="callback-group-3" value="parent_3_child_5">Parent 3 Child 5</option>
+      <option class="callback-group-4" value="parent_4_child_1">Parent 4 Child 1</option>
+      <option class="callback-group-4" value="parent_4_child_2">Parent 4 Child 2</option>
+      <option class="callback-group-4" value="parent_4_child_3">Parent 4 Child 3</option>
+      <option class="callback-group-5" value="parent_5_child_1">Parent 5 Child 1</option>
+      <option class="callback-group-5" value="parent_5_child_2">Parent 5 Child 2</option>
+      <option class="callback-group-5" value="parent_5_child_3">Parent 5 Child 3</option>
+   </select>
+   <div><em>
+      Triggered on Parent1>Child3
+   </em></div>
+   <script type="text/javascript" charset="utf-8">
+      $(document).ready(function() {
+         $('#callback_select').cascade({callbacks:{
+            child: function(on) {
+               if (on == 'after' && $('#callback_select_child').val() == 'parent_1_child_3') alert('Do something here...');
+            },
+         }});
+      });
+   </script>
+
+   </body>
+</html>
