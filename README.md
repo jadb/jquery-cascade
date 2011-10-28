@@ -1,4 +1,4 @@
-# Cascade (jQuery plugin)
+# Cascade (jQuery plugin) ![Project status](http://stillmaintained.com/jadb/jquery-cascade.png)
 
 Enabling, gracefully degradable cascading `<select>` lists
 
